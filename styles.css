@@ -1,0 +1,11 @@
+/*  look in the page for all the p tags and make them the color red, p and h3 are elements */
+/* these are called element selectors */ 
+p {
+    color: red;
+}
+
+h3 {
+    color: green; 
+}
+
+/* class selectors /*
