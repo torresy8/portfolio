@@ -1,5 +1,7 @@
+
 /*  look in the page for all the p tags and make them the color red, p and h3 are elements */
 /* these are called element selectors */ 
+/*
 p {
     color: red;
 }
@@ -8,4 +10,64 @@ h3 {
     color: green; 
 }
 
-/* class selectors /*
+/* class selectors */
+
+/*
+.about-list-item {
+    font-style: italic;
+}
+
+/* id selectors */
+/*
+#my-name {
+    color: blue;
+}
+
+/* CSS Grids */
+/*
+.grid-table {
+    display: grid; 
+    grid-template-rows: auto auto; 
+    grid-template-columns: auto auto auto;
+}
+
+/* media query - takes in a condition 
+condition = when code inside query is executed. 
+when browser is less than 600px, execute this code */
+/*
+@media(max-width:600px)
+    .grid-table {
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto;
+    }
+
+*/ 
+
+.container {
+  max-width: 840px; /* the size of the page cannot exceed 840px */
+  margin: 0 auto; /* give equal margins on both sides of the page */
+}
+
+.intro {
+    text-align:center;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.i-am, .i-like {
+    text-align: center;
+}
+
+.about-list {
+    text-align: center;
+    list-style: none;
+}
+
+@media (max-width: 480px) {
+    .about-grid {
+        grid-template-columns: 100%;
+    }
+}
