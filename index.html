@@ -3,7 +3,7 @@
     <head>
         <title>My Portfolio</title>
         <link rel="stylesheet" href="styles.css">
-        <meta name="viewport" content="width=display-width, intial-scale=1">
+        <meta name="viewport" content="width=device-width, intial-scale=1"> 
     </head>
     
     <body>
@@ -40,28 +40,31 @@
 
             <!-- My Projects section-->
             <div>
-                <h3>My Projects</h3>
-                <img src="https://via.placeholder.com/300"/>
-                <img src="https://via.placeholder.com/300"/>
-                <img src="https://via.placeholder.com/300"/>
-                <img src="https://via.placeholder.com/300"/>
+                <h3 class="projects-heading">My Projects</h3>
+                <div class="projects-grid">
+                    <img class="project-image" src="https://via.placeholder.com/300"/>
+                    <img class="project-image" src="https://via.placeholder.com/300"/>
+                    <img class="project-image" src="https://via.placeholder.com/300"/>
+                    <img class="project-image" src="https://via.placeholder.com/300"/>
+                </div>
             </div>
 
             <!-- Links to my socials-->
-            <div>
-                <h3>Links</h3>
-                <ul>
-                    <li>
-                        <a href="https://github.com/torresy8">Github</a>
-                    </li>
-                    <li>
-                        <a href="https://linkedin.com/in/yazminmtorres/">LinkedIn</a>
-                    </li>
-                </ul>
-            </div>
+            <div class="links-and-contact">
+                <div class="links">
+                    <h3>Links</h3>
+                    <ul class="links-list">
+                        <li>
+                            <a href="https://github.com/torresy8">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/yazminmtorres/">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
 
-            <!-- Form Section-->
-            <div>
+                <!-- Form Section-->
+                <div>
                 <form action="#">
                     <label for="email">
                         Email: <input id="email" placeholder="Enter your email"/>
@@ -71,6 +74,7 @@
                     </label>
                     <input type="submit" value="Send Message"/>
                 </form>
+                </div>
             </div>
         </div>
     </body>
