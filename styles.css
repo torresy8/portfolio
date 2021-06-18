@@ -5,24 +5,20 @@
 p {
     color: red;
 }
-
 h3 {
     color: green; 
 }
-
 /* class selectors */
 
 /*
 .about-list-item {
     font-style: italic;
 }
-
 /* id selectors */
 /*
 #my-name {
     color: blue;
 }
-
 /* CSS Grids */
 /*
 .grid-table {
@@ -30,7 +26,6 @@ h3 {
     grid-template-rows: auto auto; 
     grid-template-columns: auto auto auto;
 }
-
 /* media query - takes in a condition 
 condition = when code inside query is executed. 
 when browser is less than 600px, execute this code */
@@ -41,74 +36,111 @@ when browser is less than 600px, execute this code */
         grid-template-columns: auto;
     }
 }
-
 */ 
 
 .container {
-  max-width: 840px; /* the size of the page cannot exceed 840px */
-  margin: 0 auto; /* give equal margins on both sides of the page */
+    max-width: 840px; /* the size of the page cannot exceed 840px */
+    margin: 0 auto; /* give equal margins on both sides of the page */
+  }
+  
+  .intro {
+      text-align:center;
+  }
+
+  .profile-picture {
+    border-radius: 50%;
+    width: 150px; 
+    height: 150px;
+    box-shadow: 0 4px 6px 0 rgba(34,60, 80, 0.16);
+    transition: all ease-in-out .2s;
 }
 
-.intro {
-    text-align:center;
+.profile-picture:hover {
+    box-shadow: 0 8px 12px 0 rgba(34,60,80,0.16);
+}
+  
+  .about-grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+  }
+  
+  .i-am, .i-like {
+      text-align: center;
+  }
+  
+  .about-list {
+      text-align: center;
+      list-style: none;
+  }
+
+  .projects-heading {
+      text-align: center;
+  }
+  
+  .projects-grid {
+      display: grid;
+      grid-template-columns: 50% 50%;
+  }
+
+.project-image-wrapper {
+    justify-self: center; 
+    padding: 4%;
+    position: relative;
 }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
+.project-image-wrapper > h4 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    color: white; 
+    visibility: hidden; 
+    z-index:2; 
+    transition: all ease-in-out .2s;
 }
 
-.i-am, .i-like {
-    text-align: center;
-}
+.project-image-wrapper:hover > h4 {
+    visibility: visible;
 
-.about-list {
-    text-align: center;
-    list-style: none;
 }
-
-@media(max-width: 480px) {
-    .about-grid {
-        grid-template-columns: 100%;
-    }
-}
-
-.projects-heading {
-    text-align: center;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
+  
 .project-image {
     justify-self: center;
-    padding: 4%; 
+    padding: 4%;
+    border-radius: 5px%;
+    box-shadow: 0 4px 6px 0 rgba(34,60,80,0.16);
+    transition: all ease-in-out .2s;
 }
 
-@media (max-width: 650px) {
+.project-image:hover {
+    filter: brightness(.75);
+    box-shadow: 0 8px 12px 0 rgba(34,60, 80, 0.16);
+}
+
+  .links-and-contact {
+      display: grid; 
+      grid-template-columns: 50% 50%;
+      text-align: center;
+  }
+  
+  .links-list {
+      list-style: none; 
+      padding: 0;
+  }
+
+  @media (max-width: 480px) {
+      .about-grid {
+          grid-template-columns: 100%;
+      }
+  }
+
+  @media (max-width: 650px) {
     .projects-grid{
         grid-template-columns: 100%;
     }
 }
 
-.links-and-contact {
-    display: grid; 
-    grid-template-columns: 50% 50%;
-    text-align: center;
-}
-
-.links {
-    justify-self: center;
-}
-
-.links-list {
-    list-style: none; 
-    padding: 0;
-}
-
-@media (max-width: 650px) {
+@media(max-width: 650px) {
     .links-and-contact {
         grid-template-columns: 100%;
     }
