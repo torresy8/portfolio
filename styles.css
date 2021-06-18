@@ -38,6 +38,14 @@ when browser is less than 600px, execute this code */
 }
 */ 
 
+body {
+    font-family: 'Noto-sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+font-family: 'Roboto Mono', monospace;
+}
+
 .container {
     max-width: 840px; /* the size of the page cannot exceed 840px */
     margin: 0 auto; /* give equal margins on both sides of the page */
